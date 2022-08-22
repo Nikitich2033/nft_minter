@@ -1,6 +1,7 @@
 {
   "name": "full-mint-website",
   "version": "0.1.0",
+  "homepage": "https://nikitich2033.github.io/nft_minter/",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.2.6",
@@ -14,9 +15,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "save-dev": "^0.0.1-security",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -47,6 +51,7 @@
     "@nomiclabs/hardhat-etherscan": "^3.1.0",
     "dotenv": "^16.0.1",
     "ethers": "^5.6.9",
+    "gh-pages": "^4.0.0",
     "hardhat": "^2.10.1"
   }
 }
