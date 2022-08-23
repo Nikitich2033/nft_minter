@@ -4,7 +4,7 @@ import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
 import BirbsNFT from './BirbsNFT.json'
 
 
-const birbsNFTAddress = "0x9Bfb02D4d6E344b9390EBD36D7976598CDE43992";
+const birbsNFTAddress = "0xBf94Ed728A25A612BC93a7a87894D24f5BeDE4BB";
 
 const MainMint = ({ accounts, setAccounts }) => {
     const [mintAmount, setMintAmount] = useState(1);
@@ -22,8 +22,8 @@ const MainMint = ({ accounts, setAccounts }) => {
                 value: ethers.utils.parseEther((0.02 * mintAmount).toString()),
             });
             console.log('response', response);
-        } catch (err) {
-            console.log("error: ",err);
+        } catch (error) {
+            console.log("error: ",error);
         }
         }
     }

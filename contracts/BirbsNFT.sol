@@ -19,7 +19,7 @@ contract BirbsNFT is ERC721, Ownable {
         totalSupply = 0;
         maxSupply = 10000;
         maxPerWallet = 3;
-        //set withdraw wallet address
+        //withdrawWallet
 
     }
 
@@ -37,10 +37,10 @@ contract BirbsNFT is ERC721, Ownable {
     }
 
     function withdraw() external onlyOwner {
-        (bool success, ) = withdrawWallet.call{ value: address(this).balance}('');
+        (bool success, ) = payable(msg.sender).call{ value: address(this).balance}('');
         require(success,'withdraw failed');
     }
-
+   
     function mint(uint256 quantity_) public payable {
         require(isPublicMintEnabled, 'minting not enabled');
         require(msg.value == quantity_ * mintPrice, 'wrong mint value');
@@ -50,6 +50,7 @@ contract BirbsNFT is ERC721, Ownable {
         for (uint256 i = 0; i < quantity_; i++){
             uint256 newTokenId = totalSupply + 1;
             totalSupply++;
+            walletMints[msg.sender]++;
             _safeMint(msg.sender, newTokenId);
         }
     }
