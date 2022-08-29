@@ -20,7 +20,6 @@ contract BirbsNFT is ERC721, Ownable {
         maxSupply = 10000;
         maxPerWallet = 3;
         //withdrawWallet
-
     }
 
     function setIsPublicMintEnabled(bool isPublicMintEnabled_) external onlyOwner {

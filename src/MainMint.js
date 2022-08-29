@@ -43,7 +43,7 @@ const MainMint = ({ accounts, setAccounts }) => {
     }
 
     return (
-        <Flex justify="center" align="center" height="100vh" paddingBottom="150px">
+        <Flex justify="center" align="center" height="100vh" flexDirection="column" paddingBottom="150px">
             <Box width="520px">
             <div>
                 <Text fontSize="48px" textShadow="0 5px #000000">birb/eth</Text>
@@ -59,7 +59,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                     <Flex align="center" justify="center">
                         <Button 
                             onClick={handleDecrement}
-                            backgroundColor="#D6517D"
+                            backgroundColor="#32CD32"
                             borderRadius="5px"
                             boxShadow="0px 2px 2px 1px #0F0F0F"
                             color="White"
@@ -84,7 +84,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                         />
                         <Button 
                             onClick={handleIncrement}
-                            backgroundColor="#D6517D"
+                            backgroundColor="#32CD32"
                             borderRadius="5px"
                             boxShadow="0px 2px 2px 1px #0F0F0F"
                             color="White"
@@ -99,7 +99,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                     </Flex>
                     <Button 
                             onClick={handleMint}
-                            backgroundColor="#D6517D"
+                            backgroundColor="#32CD32"
                             borderRadius="5px"
                             boxShadow="0px 2px 2px 1px #0F0F0F"
                             color="White"
@@ -117,13 +117,14 @@ const MainMint = ({ accounts, setAccounts }) => {
                         letterSpacing="-5.5%"
                         fontFamily="VT323"
                         textShadow="0 3px #000000"
-                        color="#D6517D"
+                        color="#32CD32"
                     >
                         You must be connected to be able to mint.
                     </Text>
                 )}
+               
             </Box>
-        </Flex>
+        </Flex> 
     )
 }
 
