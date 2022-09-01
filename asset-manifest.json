@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/nft_minter/static/css/main.58904d7f.css",
-    "main.js": "/nft_minter/static/js/main.c109e9ce.js",
-    "static/media/forest1.gif": "/nft_minter/static/media/forest1.e856df558c129b8047fd.gif",
+    "main.css": "/nft_minter/static/css/main.5909cb34.css",
+    "main.js": "/nft_minter/static/js/main.de367ae7.js",
+    "static/media/night_waterfall.webp": "/nft_minter/static/media/night_waterfall.465fa7bf88a1ce6a79de.webp",
     "index.html": "/nft_minter/index.html",
-    "main.58904d7f.css.map": "/nft_minter/static/css/main.58904d7f.css.map",
-    "main.c109e9ce.js.map": "/nft_minter/static/js/main.c109e9ce.js.map"
+    "main.5909cb34.css.map": "/nft_minter/static/css/main.5909cb34.css.map",
+    "main.de367ae7.js.map": "/nft_minter/static/js/main.de367ae7.js.map"
   },
   "entrypoints": [
-    "static/css/main.58904d7f.css",
-    "static/js/main.c109e9ce.js"
+    "static/css/main.5909cb34.css",
+    "static/js/main.de367ae7.js"
   ]
 }
